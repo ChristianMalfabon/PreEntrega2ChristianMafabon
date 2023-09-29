@@ -65,7 +65,7 @@ nav ul  {
 
 }
 
-/* estilo base de colores y generales con id */
+/* estilo base:  colores y generales de todo el sitio */
 #menu{
     background-color: #D4AF37;
     
@@ -79,8 +79,6 @@ nav ul  {
     
  }
  
-
-
 #menu ul li a {
     text-decoration: none;
 }
@@ -148,8 +146,6 @@ section article {
     width: auto;
     border: 4px inset #D4AF37;
     margin: 2%;
-    
-
 }
 
 section article img {
@@ -180,8 +176,6 @@ article ul li {
     text-align: start;
     
 }
-
-
 
 footer{
     grid-area: footer;
@@ -352,6 +346,7 @@ footer{
     }
 }
 /*Landin preguntas fecuentes*/
+
 label{
     text-shadow: 1px 1px 1px #D4AF37;
     text-decoration: underline;
