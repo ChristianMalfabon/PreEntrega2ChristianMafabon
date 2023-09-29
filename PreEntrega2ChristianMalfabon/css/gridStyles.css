@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing:border-box;
+    }
+
+
+/*grid de contenido*/
+
+.gridContacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25vh auto auto 10vh;
+    grid-template-areas: 
+        "header"
+        "menu"
+        "form"
+        "footer";
+}
+
+header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 1;
+        grid-template-areas:  
+        "logo" "slogan" "logo";
+        justify-items: center;
+        align-items: center; 
+        background-color: black;
+        border: 2px solid #D4AF37;
+}
+
+header a img {
+    width: 40%;
+    
+}
+
+header a {
+    display: flex;
+    justify-content: center;
+}
+
+header h1{
+    color: #D4AF37;
+    display: grid;
+    place-items: center;
+    
+}
+/* navegación*/
+nav{
+    grid-area: menu;
+    
+    text-decoration: none;
+
+}
+
+nav ul  {
+    
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+/* estilo base de colores y generales con id */
+#menu{
+    background-color: #D4AF37;
+    
+    border-bottom: 1px solid black;;
+}
+
+#menu ul li{
+    margin: 0;
+    padding: 10px;
+
+    
+ }
+ 
+
+
+#menu ul li a {
+    text-decoration: none;
+}
+
+#menu ul li:hover  {
+    background-color:  #D4AF37;
+    cursor: pointer;
+}
+
+#menu ul li:hover a  {
+    color: whitesmoke;
+}
+
+/*Estilo para contenido principal de landings*/
+
+section{
+    grid-area: form;
+    text-align: center;
+}
+
+section h2 {
+       
+    margin-top: 15px;
+    font-size: 35px;
+    text-shadow: 2px 2px 1px #D4AF37;
+}
+
+/*pagina de contacto*/
+
+.contact{ 
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 18px;
+    width: 75%;
+       
+}
+
+section input {
+    width: 75%;
+    margin: 1%;
+}
+
+section textarea {
+    width: 75%;
+}
+
+
+.send{    
+    text-transform: uppercase;
+    margin: 10px;
+    background-color: #D4AF37;
+    letter-spacing: 3px;
+} 
+
+.send:hover{
+    background-color: #050505;
+    color: white;
+}  
+
+/* estilo para articles de home y desayunos*/
+section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    border: 4px inset #D4AF37;
+    margin: 2%;
+    
+
+}
+
+section article img {
+    margin: 2%;
+    border: 1px dashed black;
+}
+
+.nombreDesayuno {
+    text-align: center;
+    background-color: black;
+    color: #D4AF37;
+    font-size: 17px;
+    padding: 5px;
+
+}
+
+.description {
+    font-size: 14px;
+    max-width: 400px;
+    text-align: justify;
+}
+
+
+article ul li {
+    font-size: 14px;
+    max-width: 400px;
+    list-style-type: none;
+    text-align: start;
+    
+}
+
+
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1;
+    text-align: center;
+    background-color: black;
+    color: #D4AF37;
+    align-items: center;
+}
+
+
+/* media querys*/
+
+@media (max-width: 769px) {
+    h1 {
+        font-size: 24px;
+
+    }
+    
+    nav ul li {
+        font-size: 14px;
+    }
+
+    section h2{
+        font-size: 22px;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 16px;
+    }
+    
+    footer{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 19px;
+
+    }
+    
+    nav ul li {
+        font-size: 12px;
+    }
+
+    section h2{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 16px;
+    }
+    
+    footer{
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 19px;
+
+    }
+    
+    nav ul li {
+        font-size: 11px;
+    }
+
+    section h2{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    
+    }
+
+    nav ul li {
+        font-size: 10px;
+    }
+
+    section h2{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 434px) {
+    h1 {
+        font-size: 16px;
+    
+
+    }
+    nav ul li {
+        font-size: 9px;
+    }
+
+    section h2{
+        font-size: 17px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 391px) {
+    h1 {
+        font-size: 13px;
+    
+
+    }
+    nav ul li {
+        font-size: 11px;
+    }
+
+    section h2{
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 332px) {
+    h1 {
+        font-size: 13px;
+    
+
+    }
+    nav ul li {
+        font-size: 10px;
+    }
+
+    section h2{
+        font-size: 17px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+    
+    footer{
+        font-size: 11px;
+    }
+}
+/*Landin preguntas fecuentes*/
+label{
+    text-shadow: 1px 1px 1px #D4AF37;
+    text-decoration: underline;
+    
+}

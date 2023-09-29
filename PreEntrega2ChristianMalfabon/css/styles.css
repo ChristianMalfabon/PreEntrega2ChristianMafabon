@@ -1,0 +1,525 @@
+* {margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif }
+ 
+
+body{ 
+    background-color: whitesmoke;
+    
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    border: 2px solid #D4AF37;
+    text-align: center;
+    height: 180px;
+    
+    
+    }
+
+header #logo {
+    
+    display: block;
+    padding-top: 40px;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+ h1 {
+    color: #D4AF37;
+    display: inline-block;
+    font-size: 50px;
+    text-align: center; 
+    line-height: 240px;
+    height: 180px; 
+  
+  }  
+    
+    
+
+/*
+#slogan {color: #D4AF37;
+    display: inline-block;
+}
+*/
+
+#menu{
+    background-color: #D4AF37;
+    
+    border-bottom: 1px solid black;;
+}
+
+#menu ul li{
+    
+ 
+   display: inline-block;
+   
+   padding: 10px;
+   border-right: 1px solid rgb(14, 13, 13) ;
+   
+}
+
+#menu ul li a{
+    display: inline-block;
+    /* display: block; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 66px;
+    padding-right: 66.1px;
+    color: #050505;
+    text-decoration: none;
+}
+
+#menu ul li:hover  {
+    background-color:  #D4AF37;
+    cursor: pointer;
+}
+
+#menu ul li:hover a  {
+    color: whitesmoke;
+}
+
+h2{
+    text-align: center;
+    line-height: 70px;
+    height: 50px;
+    font-size: 35px;
+    text-shadow: 2px 2px 1px #D4AF37;
+}
+
+article{
+    display: inline-block;
+    border: 4px inset #D4AF37;
+    margin: 27px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+
+.imageArticle{
+    margin: 0px;
+}
+
+.nombreDesayuno {
+    text-align: center;
+    background-color: black;
+    color: #D4AF37;
+    font-size: 25px;
+    padding: 5px;
+
+}
+
+.description {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.description ul  {
+    font-size: 18px;
+    max-width: 400px;
+    
+    list-style-type: none;
+}
+ul {
+    list-style-type: none; 
+}
+
+footer {
+    color: #D4AF37;
+    background-color: black;
+    height: 70px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 70px;
+
+}
+
+/* Estilo para pagina de contacto*/
+
+.container{ 
+    margin: 0px auto;
+    text-align: center;
+}
+
+.contact{ 
+    margin: 0px auto;
+    padding: 15px;
+    font-size: 18px;
+    
+    
+}
+
+.datosContacto  {
+    width: 631px;
+    height: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+
+.send{
+    width: 631px;
+    height: 30px;
+    text-transform: uppercase;
+    margin: 10px;
+    background-color: #D4AF37;
+    letter-spacing: 3px;
+}
+
+.send:hover{
+    background-color: #050505;
+    color: white;
+} 
+
+/* Estilos de Quienes Somos */
+
+
+
+ #teaser{ 
+    border-radius: 20%;
+    border: 2px solid black;
+    margin-left: 15%;
+    display: inline-block;
+}
+
+#quienesSomos {
+    display: inline-block;
+    max-width: 80%;
+    margin-left: 3%;
+    border: 1px dashed #D4AF37;
+    height: 490px;
+    text-transform: uppercase;
+    background-color: #D4AF37;
+    border-radius: 2%;
+    border: 2px solid black;
+    
+    text-align: center;
+    font-size: 25px;
+    padding: 1%;
+    
+}
+
+.containerSomos{
+    display: block;
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+
+/*CODIGO DE GRIDS HASTA CONTACTO AL 100*/
+
+/* * {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing:border-box;
+    }
+
+/*grid de contacto*/
+
+#gridContacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25vh auto auto 10vh;
+     grid-template-areas: 
+        "header"
+        "menu"
+        "form"
+        "footer";
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1;
+    grid-template-areas:  
+     "logo" "slogan" "logo";
+     justify-items: center;
+     align-items: center;
+     background-color: black;
+     border: 2px solid #D4AF37;
+}
+
+header img {
+    width: 40%;
+}
+
+header h1{
+    color: #D4AF37;
+    display: grid;
+    place-items: center;
+    
+}
+/* grilla */
+nav{
+    grid-area: menu;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1; */
+    text-decoration: none;
+
+}
+
+nav ul  {
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+    
+    
+
+}
+
+
+/* estilo pasado con id */
+#menu{
+    background-color: #D4AF37;
+    
+    border-bottom: 1px solid black;;
+}
+
+#menu ul li{
+    margin: 0;
+    padding: 10px;
+
+    
+ }
+ 
+
+
+#menu ul li a {
+    text-decoration: none;
+}
+
+#menu ul li:hover  {
+    background-color:  #D4AF37;
+    cursor: pointer;
+}
+
+#menu ul li:hover a  {
+    color: whitesmoke;
+}
+
+
+
+section{
+    grid-area: form;
+    text-align: center;
+    
+    
+   
+}
+
+section h2 {
+       
+    margin-top: 15px;
+    font-size: 35px;
+    text-shadow: 2px 2px 1px #D4AF37;
+}
+
+.contact{ 
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 18px;
+    width: 75%;
+       
+}
+
+section input {
+    width: 75%;
+    margin: 1%;
+}
+
+section textarea {
+    width: 75%;
+}
+
+ .send{
+    
+    
+    text-transform: uppercase;
+    margin: 10px;
+    background-color: #D4AF37;
+    letter-spacing: 3px;
+} 
+
+.send:hover{
+    background-color: #050505;
+    color: white;
+}  
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1;
+    text-align: center;
+    background-color: black;
+    color: #D4AF37;
+    align-items: center;
+}
+
+
+/* hacer media al 769 para cambiar tamaño de h1 */
+
+@media (max-width: 769px) {
+    h1 {
+        font-size: 24px;
+
+    }
+    
+    nav ul li {
+        font-size: 14px;
+    }
+
+    section h2{
+        font-size: 22px;
+    }
+
+    .contact{
+        font-size: 16px;
+    }
+    
+    footer{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 19px;
+
+    }
+    
+    nav ul li {
+        font-size: 12px;
+    }
+
+    section h2{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 16px;
+    }
+    
+    footer{
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 19px;
+
+    }
+    
+    nav ul li {
+        font-size: 11px;
+    }
+
+    section h2{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    
+    }
+
+    nav ul li {
+        font-size: 10px;
+    }
+
+    section h2{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 434px) {
+    h1 {
+        font-size: 13px;
+    
+
+    }
+    nav ul li {
+        font-size: 9px;
+    }
+
+    section h2{
+        font-size: 14px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 391px) {
+    h1 {
+        font-size: 13px;
+    
+
+    }
+    nav ul li {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 332px) {
+    h1 {
+        font-size: 13px;
+    
+
+    }
+    nav ul li {
+        font-size: 10px;
+    }
+
+    section h2{
+        font-size: 17px;
+    }
+
+    .contact{
+        font-size: 12px;
+    }
+    
+    footer{
+        font-size: 11px;
+    }
+} */
+
