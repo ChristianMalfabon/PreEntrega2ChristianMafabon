@@ -94,6 +94,19 @@ nav ul  {
 
 /*Estilo para contenido principal de landings*/
 
+#landing{
+    margin-top: 15px;
+    font-size: 35px;
+    text-shadow: 2px 2px 1px #D4AF37;
+    text-align: center;
+
+}
+
+.card{
+    margin: 3%;
+    
+}
+
 section{
     grid-area: form;
     text-align: center;
@@ -139,14 +152,24 @@ section textarea {
 }  
 
 /* estilo para articles de home y desayunos*/
-section article {
+#desayunosHome {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: auto;
     border: 4px inset #D4AF37;
     margin: 2%;
+    
 }
+
+/* cards*/
+
+.card{
+    justify-items: center;
+}
+
+/*
 
 section article img {
     margin: 2%;
@@ -175,7 +198,7 @@ article ul li {
     list-style-type: none;
     text-align: start;
     
-}
+} */
 
 footer{
     grid-area: footer;
