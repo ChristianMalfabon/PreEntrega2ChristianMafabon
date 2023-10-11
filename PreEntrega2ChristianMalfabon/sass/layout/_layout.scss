@@ -1,2 +1,17 @@
 $primary: #D4AF37;
 $secondary: black;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+       
+    margin-top: 15px;
+    font-size: 35px;
+    text-shadow: 2px 2px 1px #D4AF37;
+    text-align: center;
+}
