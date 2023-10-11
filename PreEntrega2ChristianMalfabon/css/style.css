@@ -85,6 +85,23 @@ section .send:hover {
   color: white;
 }
 
+#desayunosHome {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  margin: 2%;
+}
+
+.card {
+  justify-items: center;
+  margin: 2%;
+  border-left: 4px inset #D4AF37;
+  border-bottom: 4px inset #D4AF37;
+  border-right: 4px inset #D4AF37;
+}
+
 footer {
   grid-area: footer;
   display: grid;

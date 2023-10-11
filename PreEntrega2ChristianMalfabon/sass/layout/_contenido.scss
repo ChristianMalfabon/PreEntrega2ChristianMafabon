@@ -32,3 +32,24 @@
         }
     }
  }
+
+ #desayunosHome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    
+    margin: 2%;
+
+    
+    
+}
+
+.card{
+    justify-items: center;
+    margin: 2%;
+    border-left: 4px inset $primary;
+    border-bottom: 4px inset $primary;
+    border-right: 4px inset $primary;
+}
