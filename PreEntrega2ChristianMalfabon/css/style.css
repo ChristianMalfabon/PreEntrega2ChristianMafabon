@@ -102,6 +102,29 @@ section .send:hover {
   border-right: 4px inset #D4AF37;
 }
 
+.pedido {
+  text-align: center;
+}
+
+.pedido p {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  margin-top: 4%;
+}
+
+.animacion {
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 footer {
   grid-area: footer;
   display: grid;
