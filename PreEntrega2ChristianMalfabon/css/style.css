@@ -125,6 +125,24 @@ section .send:hover {
     opacity: 0.5;
   }
 }
+#quienesSomos {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 45% 48%;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "video" "descripcion";
+  row-gap: 7%;
+}
+#quienesSomos .containerSomos {
+  border-radius: 20%;
+  border: 4px inset #D4AF37;
+}
+#quienesSomos video {
+  width: 70%;
+  height: 70%;
+}
+
 footer {
   grid-area: footer;
   display: grid;

@@ -76,3 +76,25 @@
           opacity: 0.5;
         }
       }
+
+      #quienesSomos{
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 45% 48%;
+        align-items: center;
+        justify-content: center;
+        grid-template-areas: 
+        "video"
+        "descripcion";
+        row-gap: 7%;
+
+            .containerSomos{
+                border-radius: 20%;
+                border: 4px inset $primary;
+            }
+
+            video{
+                width: 70%;
+                height: 70%;
+            }
+      }
