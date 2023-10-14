@@ -130,7 +130,7 @@ label {
 }
 @media screen and (min-width: 769px) and (max-width: 993px) {
   body {
-    font-size: 14px;
+    font-size: 20px;
   }
   header h1 {
     font-size: 29px;
@@ -194,11 +194,18 @@ header h1 {
   background-color: black;
 }
 
-.sectionContacto {
+.contact-grid {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: auto;
-  grid-template-areas: "form";
+  grid-gap: 20px;
+}
+
+.contact-info {
+  grid-column: 1;
+}
+
+.contact-form {
+  grid-column: 1;
 }
 
 section {

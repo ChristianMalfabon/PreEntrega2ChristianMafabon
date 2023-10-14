@@ -1,10 +1,24 @@
- .sectionContacto{
+//  .sectionContacto{
+//     display: grid;
+//     grid-template-columns: 1;
+//     grid-template-rows: auto;
+//     grid-template-areas: 
+//      "form";
+//  }
+
+.contact-grid {
     display: grid;
     grid-template-columns: 1;
-    grid-template-rows: auto;
-    grid-template-areas: 
-     "form";
- }
+    grid-gap: 20px;
+}
+
+.contact-info {
+    grid-column: 1;
+}
+
+.contact-form {
+    grid-column: 1;
+}
 
  section{
     grid-area: form;
@@ -101,3 +115,5 @@
         
         
      }     
+
+    
