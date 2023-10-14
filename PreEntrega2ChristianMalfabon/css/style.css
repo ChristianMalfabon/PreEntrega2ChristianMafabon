@@ -201,12 +201,12 @@ header h1 {
   width: 75%;
 }
 
-section input {
+input {
   width: 75%;
   margin: 1%;
 }
 
-section textarea {
+textarea {
   width: 75%;
 }
 
@@ -216,7 +216,6 @@ section textarea {
   background-color: #D4AF37;
   letter-spacing: 3px;
 }
-
 .send:hover {
   background-color: #050505;
   color: white;

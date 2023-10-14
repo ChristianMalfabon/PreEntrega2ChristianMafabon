@@ -1,4 +1,5 @@
 
+
 .contact{ 
     margin: 0px auto;
     padding: 10px;
@@ -7,14 +8,14 @@
        
 }
 
-section input {
-    width: 75%;
-    margin: 1%;
-}
+    input {
+         width: 75%;
+         margin: 1%;
+    }
 
-section textarea {
+    textarea {
     width: 75%;
-}
+    }
 
 
 .send{    
@@ -22,11 +23,12 @@ section textarea {
     margin: 10px;
     background-color: #D4AF37;
     letter-spacing: 3px;
-} 
 
-.send:hover{
-    background-color: #050505;
-    color: white;
+
+    &:hover{
+         background-color: #050505;
+        color: white; 
+    } 
 }  
 
  #desayunosHome {
