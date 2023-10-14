@@ -5,14 +5,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h2 {
-  margin-top: 15px;
-  font-size: 35px;
-  font-weight: 700;
-  text-shadow: 2px 2px 1px #D4AF37;
-  text-align: center;
-}
-
 label {
   text-shadow: 1px 1px 1px #D4AF37;
   text-decoration: underline;
@@ -20,6 +12,28 @@ label {
   margin-bottom: 1%;
 }
 
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 13px;
+  }
+  header {
+    height: 15vh;
+  }
+  header h1 {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px #D4AF37;
+    text-align: center;
+  }
+}
 header {
   grid-area: header;
   display: grid;
@@ -139,7 +153,7 @@ section .send:hover {
   border: 4px inset #D4AF37;
 }
 #quienesSomos video {
-  width: 70%;
+  width: 45%;
   height: 65%;
 }
 

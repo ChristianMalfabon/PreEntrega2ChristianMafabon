@@ -1,5 +1,10 @@
 $primary: #D4AF37;
 $secondary: black;
+$breakpoint-small: 320px;
+$breakpoint-medium: 600px;
+$breakpoint-ipad: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1200px;
 
 *{
     margin: 0px;
@@ -8,9 +13,9 @@ $secondary: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h2{
-    @include titulolanding
-}
+// h2{
+//     @include titulolanding
+// }
 
 label{
     text-shadow: 1px 1px 1px #D4AF37;
@@ -18,4 +23,35 @@ label{
     font-weight: bold;
     margin-bottom: 1%;
 }
+
+    
+@media screen and (max-width: $breakpoint-small) {
+    body{
+        font-size: 13px;
+        
+    }
+    
+    header{
+        height: 15vh;
+
+        h1{
+            display: flex;
+            font-size: 13px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+
+    h2{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 700;
+        text-shadow: 2px 2px 1px #D4AF37;
+        text-align: center;
+    }
+
+} 
+ 
 
