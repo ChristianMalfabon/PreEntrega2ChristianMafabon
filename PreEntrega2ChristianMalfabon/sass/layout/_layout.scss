@@ -1,7 +1,7 @@
 $primary: #D4AF37;
 $secondary: black;
-$breakpoint-small: 320px;
-$breakpoint-medium: 600px;
+$breakpoint-small: 345px;
+$breakpoint-medium: 420px;
 $breakpoint-ipad: 768px;
 $breakpoint-desktop: 1024px;
 $breakpoint-large: 1200px;
@@ -13,9 +13,9 @@ $breakpoint-large: 1200px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-// h2{
-//     @include titulolanding
-// }
+h2{
+     @include titulolanding
+ }
 
 label{
     text-shadow: 1px 1px 1px #D4AF37;
@@ -23,8 +23,138 @@ label{
     font-weight: bold;
     margin-bottom: 1%;
 }
+@media (max-width: 769px) {
+    h1 {
+        font-size: 24px;
 
+    }
     
+    nav ul li {
+        font-size: 14px;
+    }
+
+    section h2{
+        font-size: 22px;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+    .contact{
+        font-size: 16px;
+    }
+    
+    footer{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    body{
+        font-size: 16;
+    }
+
+    header{
+        height: 15vh;
+    
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    body{
+        font-size: 16;
+    }
+
+    header{
+        height: 15vh;
+    
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    h2{
+        font-size: 22px;
+    }
+}
+    
+@media (max-width: 480px) {
+
+    body{
+        font-size: 16;
+    }
+
+    header{
+        height: 15vh;
+    
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+}
+ 
+@media (max-width: 391px) {
+
+    body{
+        font-size: 14px;
+    }
+    
+    header{
+        height: 15vh;
+
+        h1{
+            font-size: 14px;
+            
+        }
+
+    }
+   
+      h2{
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 434px) {
+
+    body{
+        font-size: 16;
+    }
+
+    header{
+        height: 15vh;
+    
+    h1 {
+        font-size: 16px;
+    
+
+    }
+}
+
+    h2{
+        font-size: 20px;
+    }
+
+}
+
 @media screen and (max-width: $breakpoint-small) {
     body{
         font-size: 13px;
@@ -45,13 +175,9 @@ label{
     }
 
     h2{
-        margin-top: 15px;
+        @include titulolanding;
         font-size: 20px;
-        font-weight: 700;
-        text-shadow: 2px 2px 1px #D4AF37;
-        text-align: center;
+    
     }
 
 } 
- 
-

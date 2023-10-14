@@ -5,6 +5,13 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h2 {
+  margin-top: 15px;
+  font-weight: 700;
+  text-shadow: 2px 2px 1px #D4AF37;
+  text-align: center;
+}
+
 label {
   text-shadow: 1px 1px 1px #D4AF37;
   text-decoration: underline;
@@ -12,7 +19,97 @@ label {
   margin-bottom: 1%;
 }
 
-@media screen and (max-width: 320px) {
+@media (max-width: 769px) {
+  h1 {
+    font-size: 24px;
+  }
+  nav ul li {
+    font-size: 14px;
+  }
+  section h2 {
+    font-size: 22px;
+  }
+  label {
+    font-size: 18px;
+  }
+  .contact {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 16;
+  }
+  header {
+    height: 15vh;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 16;
+  }
+  header {
+    height: 15vh;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 16;
+  }
+  header {
+    height: 15vh;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 391px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    height: 15vh;
+  }
+  header h1 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 434px) {
+  body {
+    font-size: 16;
+  }
+  header {
+    height: 15vh;
+  }
+  header h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 345px) {
   body {
     font-size: 13px;
   }
@@ -28,10 +125,10 @@ label {
   }
   h2 {
     margin-top: 15px;
-    font-size: 20px;
     font-weight: 700;
     text-shadow: 2px 2px 1px #D4AF37;
     text-align: center;
+    font-size: 20px;
   }
 }
 header {
@@ -141,20 +238,23 @@ section .send:hover {
 }
 #quienesSomos {
   display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 45% 48%;
-  align-items: center;
-  justify-content: center;
-  grid-template-areas: "video" "descripcion";
-  row-gap: 7%;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+  grid-template-areas: "descripcion";
 }
-#quienesSomos .containerSomos {
-  border-radius: 20%;
+#quienesSomos #descripcion {
   border: 4px inset #D4AF37;
 }
-#quienesSomos video {
-  width: 45%;
-  height: 65%;
+
+section {
+  grid-area: descripcion;
+  text-align: center;
+}
+section p {
+  font-weight: 700;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
 }
 
 footer {
