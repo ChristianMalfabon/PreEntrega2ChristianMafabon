@@ -8,13 +8,8 @@ $secondary: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h2 {
-       
-    margin-top: 15px;
-    font-size: 35px;
-    font-weight: 700;
-    text-shadow: 2px 2px 1px #D4AF37;
-    text-align: center;
+h2{
+    @include titulolanding
 }
 
 label{
