@@ -194,39 +194,31 @@ header h1 {
   background-color: black;
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1;
-  grid-gap: 20px;
+.contact {
+  margin: 0px auto;
+  padding: 10px;
+  font-size: 18px;
+  width: 75%;
 }
 
-.contact-info {
-  grid-column: 1;
-}
-
-.contact-form {
-  grid-column: 1;
-}
-
-section {
-  grid-area: form;
-  text-align: center;
-}
 section input {
   width: 75%;
   margin: 1%;
 }
+
 section textarea {
   width: 75%;
 }
-section .send {
+
+.send {
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 10px;
   background-color: #D4AF37;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
-section .send:hover {
-  background-color: black;
+
+.send:hover {
+  background-color: #050505;
   color: white;
 }
 
