@@ -9,12 +9,15 @@
 }
 
     input {
-         width: 75%;
+         @extend .contact;
          margin: 1%;
+         background-color:rgb(198, 201, 202)
     }
 
     textarea {
-    width: 75%;
+         @extend .contact;
+         background-color: rgb(198, 201, 202)
+         
     }
 
 
@@ -22,7 +25,7 @@
     text-transform: uppercase;
     margin: 10px;
     background-color: #D4AF37;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
 
     &:hover{

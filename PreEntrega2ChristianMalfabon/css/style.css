@@ -23,6 +23,9 @@ label {
   body {
     font-size: 12px;
   }
+  .contact, textarea, input {
+    font-size: 12px;
+  }
   header {
     height: 15vh;
   }
@@ -194,7 +197,7 @@ header h1 {
   background-color: black;
 }
 
-.contact {
+.contact, textarea, input {
   margin: 0px auto;
   padding: 10px;
   font-size: 18px;
@@ -202,19 +205,19 @@ header h1 {
 }
 
 input {
-  width: 75%;
   margin: 1%;
+  background-color: rgb(198, 201, 202);
 }
 
 textarea {
-  width: 75%;
+  background-color: rgb(198, 201, 202);
 }
 
 .send {
   text-transform: uppercase;
   margin: 10px;
   background-color: #D4AF37;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 .send:hover {
   background-color: #050505;

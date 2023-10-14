@@ -26,9 +26,13 @@ label{
 
 
 @media screen and (max-width: $breakpoint-small) {
-    body{
+    body {
         font-size: 12px;
         
+    }
+
+    .contact{
+        font-size: 12px;
     }
     
     header{
@@ -49,6 +53,8 @@ label{
         font-size: 16px;
     
     }
+
+    
 
 } 
 
@@ -75,7 +81,7 @@ label{
   }
 }
 
-@media screen and (min-width: 339px) and (max-width: 420px) {
+@media screen and (min-width: 339px) and (max-width: $breakpoint-medium) {
     body{
         font-size: 13px;
         
@@ -144,7 +150,7 @@ label{
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: $breakpoint-ipad) {
     body{
          font-size: 14px;
         
