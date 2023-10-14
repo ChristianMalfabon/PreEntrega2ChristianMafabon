@@ -1,6 +1,6 @@
 $primary: #D4AF37;
 $secondary: black;
-$breakpoint-small: 345px;
+$breakpoint-small: 320px;
 $breakpoint-medium: 420px;
 $breakpoint-ipad: 768px;
 $breakpoint-desktop: 1024px;
@@ -23,141 +23,10 @@ label{
     font-weight: bold;
     margin-bottom: 1%;
 }
-@media (max-width: 769px) {
-    h1 {
-        font-size: 24px;
-
-    }
-    
-    nav ul li {
-        font-size: 14px;
-    }
-
-    section h2{
-        font-size: 22px;
-    }
-
-    label{
-        font-size: 18px;
-    }
-
-    .contact{
-        font-size: 16px;
-    }
-    
-    footer{
-        font-size: 14px;
-    }
-
-}
-
-@media (max-width: 600px) {
-    body{
-        font-size: 16;
-    }
-
-    header{
-        height: 15vh;
-    
-        h1 {
-            font-size: 18px;
-        }
-    }
-
-    h2{
-        font-size: 22px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-    body{
-        font-size: 16;
-    }
-
-    header{
-        height: 15vh;
-    
-        h1 {
-            font-size: 18px;
-        }
-    }
-
-    h2{
-        font-size: 22px;
-    }
-}
-    
-@media (max-width: 480px) {
-
-    body{
-        font-size: 16;
-    }
-
-    header{
-        height: 15vh;
-    
-        h1 {
-            font-size: 18px;
-        }
-    }
-
-    h2{
-        font-size: 22px;
-    }
-
-}
- 
-@media (max-width: 391px) {
-
-    body{
-        font-size: 14px;
-    }
-    
-    header{
-        height: 15vh;
-
-        h1{
-            font-size: 14px;
-            
-        }
-
-    }
-   
-      h2{
-        font-size: 20px;
-    }
-
-}
-
-
-
-@media (max-width: 434px) {
-
-    body{
-        font-size: 16;
-    }
-
-    header{
-        height: 15vh;
-    
-    h1 {
-        font-size: 16px;
-    
-
-    }
-}
-
-    h2{
-        font-size: 20px;
-    }
-
-}
 
 @media screen and (max-width: $breakpoint-small) {
     body{
-        font-size: 13px;
+        font-size: 12px;
         
     }
     
@@ -176,8 +45,169 @@ label{
 
     h2{
         @include titulolanding;
-        font-size: 20px;
+        font-size: 16px;
     
     }
 
 } 
+
+@media screen and (min-width: 321px) and (max-width: 338px) {
+    body{
+        font-size: 13px;
+        
+    }
+    
+    header{
+        height: 15vh;
+
+        h1{
+            font-size: 13px;
+            
+
+    }
+
+    h2{
+        @include titulolanding;
+        font-size: 16px;
+    
+    }
+  }
+}
+
+@media screen and (min-width: 339px) and (max-width: 420px) {
+    body{
+        font-size: 13px;
+        
+    }
+    
+    header{
+        height: 15vh;
+
+        h1{
+            font-size: 14px;
+            
+
+    }
+
+    h2{
+        @include titulolanding;
+        font-size: 16px;
+    
+    }
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 495px) {
+    body{
+        font-size: 13px;
+        
+    }
+    
+    header{
+        height: 15vh;
+
+        h1{
+            font-size: 17px;
+            
+
+    }
+
+    h2{
+        @include titulolanding;
+        font-size: 16px;
+    
+    }
+  }
+}
+
+@media screen and (min-width: 494px) and (max-width: 575px) {
+    body{
+        font-size: 13px;
+        
+    }
+    
+    header{
+        height: 15vh;
+
+        h1{
+            font-size: 18px;
+            
+
+    }
+
+    h2{
+        @include titulolanding;
+        font-size: 16px;
+    
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    body{
+         font-size: 14px;
+        
+    }
+    
+    header{
+        // height: 17vh;
+
+        h1{
+            font-size: 22px;
+            
+
+    }
+
+    h2{
+        @include titulolanding;
+        font-size: 16px;
+    
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 993px){
+    body{
+        font-size: 14px;
+       
+   }
+   
+   header{
+    //    height: 15vh;
+
+       h1{
+           font-size: 29px;
+           
+
+   }
+
+   h2{
+       @include titulolanding;
+       font-size: 16px;
+   
+   }
+ }
+}
+
+@media screen and (min-width: 994px) {
+    body{
+        font-size: 16px;
+       
+   }
+   
+   header{
+    //    height: 15vh;
+
+       h1{
+           font-size: 34px;
+           
+
+   }
+
+   h2{
+       @include titulolanding;
+       font-size: 16px;
+   
+   }
+ }
+}
