@@ -10,6 +10,7 @@ h2 {
   font-weight: 700;
   text-shadow: 2px 2px 1px #D4AF37;
   text-align: center;
+  margin: 2%;
 }
 
 label {
@@ -17,6 +18,14 @@ label {
   text-decoration: underline;
   font-weight: bold;
   margin-bottom: 1%;
+}
+
+body {
+  background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patron\ dulce.png);
+}
+
+.backgroundWhite {
+  background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patronBlanco.png);
 }
 
 @media screen and (max-width: 320px) {
@@ -48,6 +57,9 @@ label {
   body {
     font-size: 13px;
   }
+  textarea {
+    height: 350px !important;
+  }
   header {
     height: 15vh;
   }
@@ -65,6 +77,9 @@ label {
 @media screen and (min-width: 339px) and (max-width: 420px) {
   body {
     font-size: 13px;
+  }
+  textarea {
+    height: 350px !important;
   }
   header {
     height: 15vh;
@@ -133,10 +148,10 @@ label {
 }
 @media screen and (min-width: 769px) and (max-width: 993px) {
   body {
-    font-size: 20px;
+    font-size: 16px;
   }
   header h1 {
-    font-size: 29px;
+    font-size: 30px;
   }
   header h2 {
     margin-top: 15px;
@@ -149,6 +164,12 @@ label {
 @media screen and (min-width: 994px) {
   body {
     font-size: 16px;
+  }
+  label {
+    font-size: 25px;
+  }
+  .contact, textarea, input {
+    font-size: 25px;
   }
   header h1 {
     font-size: 34px;
@@ -199,23 +220,24 @@ header h1 {
 
 .contact, textarea, input {
   margin: 0px auto;
+  margin-bottom: 1%;
   padding: 10px;
-  font-size: 18px;
   width: 75%;
 }
 
 input {
-  margin: 1%;
-  background-color: rgb(198, 201, 202);
+  margin: 2%;
+  background-color: rgb(237, 242, 243);
 }
 
 textarea {
-  background-color: rgb(198, 201, 202);
+  margin: 2%;
+  background-color: rgb(237, 242, 243);
 }
 
 .send {
   text-transform: uppercase;
-  margin: 10px;
+  margin: 2%;
   background-color: #D4AF37;
   letter-spacing: 2px;
 }
@@ -234,7 +256,7 @@ textarea {
 }
 
 .card {
-  justify-items: center;
+  justify-content: space-evenly;
   margin: 2%;
   border-left: 4px inset #D4AF37;
   border-bottom: 4px inset #D4AF37;
@@ -264,27 +286,375 @@ textarea {
     opacity: 0.5;
   }
 }
-#quienesSomos {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: auto;
-  grid-template-areas: "descripcion";
-}
-#quienesSomos #descripcion {
-  border: 4px inset #D4AF37;
-}
-
 section {
   grid-area: descripcion;
   text-align: center;
 }
+section video {
+  width: 80%;
+  margin: 2%;
+  border: 4px inset #D4AF37;
+}
 section p {
+  width: 80%;
   font-weight: 700;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
 }
 
+#landingSomos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 30%, 45% 10%;
+  grid-template-areas: "header" "nav" "quienesSomos" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+#quienesSomos {
+  grid-area: quienesSomos;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#quienesSomos #descripcion {
+  border: 4px inset #D4AF37;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*estilo para copy*/
+#landingSomos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+#contenidoSomos {
+  grid-area: contenido;
+  display: flex;
+  flex-direction: column;
+}
+#contenidoSomos aside video {
+  border: 4px inset #D4AF37;
+  width: 80%;
+}
+#contenidoSomos article #descripcion {
+  border: 4px inset #D4AF37;
+  margin-top: 1%;
+  margin-bottom: 4%;
+  background-color: rgba(255, 255, 255, 0.678);
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media (min-width: 626px) and (max-width: 649px) {
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  body {
+    background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patron\ dulce.png);
+  }
+}
+@media (min-width: 650px) and (max-width: 768px) {
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  body {
+    background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patron\ dulce.png);
+  }
+}
+@media (min-width: 769px) and (max-width: 993px) {
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  body {
+    background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patron\ dulce.png);
+  }
+}
+@media (min-width: 994px) and (max-width: 1199px) {
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  h2 {
+    font-size: 30px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  h5.card-title {
+    font-size: 22px;
+  }
+  p.card-text {
+    font-size: 18px;
+  }
+  li.list-group-item {
+    font-size: 22px;
+  }
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+    margin-bottom: 10%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    height: 500px;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  body {
+    font-size: 20px;
+  }
+  .animacion {
+    font-size: 35px !important;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1799px) {
+  h2 {
+    font-size: 45px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+  h5.card-title {
+    font-size: 25px;
+  }
+  p.card-text {
+    font-size: 18px;
+  }
+  li.list-group-item {
+    font-size: 22px;
+  }
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+    margin-bottom: 10%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  body {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1800px) and (max-width: 2000px) {
+  h2 {
+    font-size: 40px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+  h5.card-title {
+    font-size: 25px;
+  }
+  p.card-text {
+    font-size: 20px;
+  }
+  li.list-group-item {
+    font-size: 25px;
+  }
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+    margin-bottom: 10%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  body {
+    font-size: 30px;
+    background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patron\ dulce.png);
+  }
+  .animacion {
+    font-size: 40px !important;
+  }
+}
+@media (min-width: 2001px) {
+  h2 {
+    font-size: 40px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+  #landingSomos {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto 8%;
+    grid-template-areas: "header" "nav" "h2" "contenido" "footer";
+  }
+  #contenidoSomos {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #contenidoSomos aside video {
+    border: 4px inset #D4AF37;
+    width: 80%;
+    margin-bottom: 10%;
+  }
+  #contenidoSomos article #descripcion {
+    border: 4px inset #D4AF37;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  body {
+    font-size: 30px;
+    background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patron\ dulce.png);
+  }
+}
 footer {
   grid-area: footer;
   display: grid;

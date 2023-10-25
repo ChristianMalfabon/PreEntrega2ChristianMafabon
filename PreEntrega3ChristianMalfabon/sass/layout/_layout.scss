@@ -14,7 +14,8 @@ $breakpoint-large: 1200px;
 }
 
 h2{
-     @include titulolanding
+     @include titulolanding;
+     margin: 2%;
  }
 
 label{
@@ -24,6 +25,13 @@ label{
     margin-bottom: 1%;
 }
 
+body{
+    background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patron\ dulce.png);
+}
+
+.backgroundWhite{
+    background-image: url(/PreEntrega3ChristianMalfabon/assets/images/patronBlanco.png);
+}
 
 @media screen and (max-width: $breakpoint-small) {
     body {
@@ -63,6 +71,10 @@ label{
         font-size: 13px;
         
     }
+
+    textarea{
+        height: 350px !important;
+    }
     
     header{
         height: 15vh;
@@ -79,12 +91,18 @@ label{
     
     }
   }
+
+  
 }
 
 @media screen and (min-width: 339px) and (max-width: $breakpoint-medium) {
     body{
         font-size: 13px;
         
+    }
+
+    textarea{
+        height: 350px !important;
     }
     
     header{
@@ -157,7 +175,7 @@ label{
     }
     
     header{
-        // height: 17vh;
+        
 
         h1{
             font-size: 22px;
@@ -175,15 +193,15 @@ label{
 
 @media screen and (min-width: 769px) and (max-width: 993px){
     body{
-        font-size: 20px;
+        font-size: 16px;
        
    }
    
    header{
-    //    height: 15vh;
+    
 
        h1{
-           font-size: 29px;
+           font-size: 30px;
            
 
    }
@@ -201,20 +219,32 @@ label{
         font-size: 16px;
        
    }
+
+   label{
+    font-size: 25px ;
+   }
+
+   .contact{
+    font-size: 25px;
+   }
    
    header{
-    //    height: 15vh;
+   
 
        h1{
            font-size: 34px;
-           
-
-   }
+        }
 
    h2{
        @include titulolanding;
        font-size: 16px;
    
    }
+
  }
+
+
 }
+
+
+
